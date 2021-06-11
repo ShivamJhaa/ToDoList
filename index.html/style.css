@@ -1,0 +1,100 @@
+*{
+    background-color: coral;
+    color: rgb(240, 40, 40);
+}
+p {
+  
+    color: darkblue;
+}
+h1 {
+    color: rgb(92, 17, 231);
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+h2{
+ 
+    color: rgb(13, 26, 212);
+}
+h3{
+ 
+    color: rgb(13, 26, 212);
+}
+ul>li{
+    color: blue;
+    color: brown;
+}
+ol{
+    
+    color: blue;
+}
+.btn {
+    font-weight: bolder;
+    color: crimson;
+    margin: 10px;
+    background-color: darkblue;
+    width: 500px;
+
+    box-shadow: grey 10px 10px 10px;
+    transition: 1s;
+}
+.btn:hover{
+    transform: translate(-10px,-10px);
+    box-shadow: grey 20px 20px 20px;
+    transition: 0.5s;
+
+}
+.btn:active{
+    transform: translate(5px,5px);
+    box-shadow: grey 5px 5px 3px;
+    transition: 0.3s;
+
+
+
+}
+.ani{
+    animation: bounce 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear; 
+}
+@keyframes bounce {
+    0%{
+
+    }
+    50%{
+        transform: translate(800px);
+    }
+    100%
+    {
+
+    }
+    
+}
+.ani:hover{
+    color: darkgreen;
+}
+.ani:active{
+    color: darkviolet;
+}
+.container{
+    height: 100px;
+    width: 800px;
+    margin-left: 50px;
+    display: inline;
+    background-color: blue;
+    border: black solid 1px;
+
+    flex-wrap: nowrap;
+}
+.item{
+    height: 50px;
+    width: 100px;
+    margin: 22px;
+    border: black solid 1px;
+    color: rgb(7, 1, 2);
+    font-size: medium;
+    background-color: rgb(56, 9, 145);
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
