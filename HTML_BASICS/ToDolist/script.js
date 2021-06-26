@@ -9,6 +9,9 @@ btnAdd.click(()=>{
                 text:inpNewTask.val()
 
         })
+        listItem.click(()=>{
+               listItem.toggleClass('done')
+        })
         ulTasks.append(listItem)
         inpNewTask.val("")
 })
