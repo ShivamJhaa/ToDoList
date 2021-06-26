@@ -12,7 +12,6 @@
       }
     
     
-    /* Additional styling */
       
     body {
       font-size: 18px;
@@ -72,3 +71,14 @@
         text-decoration: line-through;
         color:#6c757d;
 }
+#neww{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+}
+#ulTasks{
+        background-color: cyan;
+}
+body {
+        font-family: Roboto;
+        background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%)
+    }
