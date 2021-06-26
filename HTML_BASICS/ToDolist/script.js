@@ -3,16 +3,24 @@ let btnAdd= $('#btnAdd')
 let btnClear= $('#btnClear')
 let inpNewTask= $('#inpNewTask')
 
-btnAdd.click(()=>{
+function addItem(){
         let listItem=$('<li>',{
                 'class':'list-group-item',
-                text:inpNewTask.val()
+                text:inpNewTask.val().trim()
 
         })
         listItem.click(()=>{
                listItem.toggleClass('done')
         })
-        ulTasks.append(listItem)
+        console.log(inpNewTask.val())
+        if(inpNewTask.val().trim()) ulTasks.append(listItem)
         inpNewTask.val("")
+}
+
+inpNewTask.keypress((e)=>{
+        if (e.which==13) addItem()
 })
+
+btnAdd.click(addItem)
+
 btnClear.click(()=>inpNewTask.val(''))
