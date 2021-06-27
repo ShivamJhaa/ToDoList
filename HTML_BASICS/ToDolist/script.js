@@ -7,12 +7,13 @@ let btnSort= $('#btnSort')
 
 function addItem(){
         let listItem=$('<li>',{
-                'class':'list-group-item',
+                'class':'list-group-item list-group-item-info',
                 text:inpNewTask.val().trim()
 
         })
         listItem.click(()=>{
                listItem.toggleClass('done')
+               listItem.toggleClass('list-group-item-danger')
         })
         if(inpNewTask.val().trim()) ulTasks.append(listItem)
         inpNewTask.val("")
