@@ -26,14 +26,8 @@ h1 { color: #fff; font-family: 'Righteous', cursive; font-size: 65px; font-weigh
         opacity: 0.9;
 }
 #calendar{
-  width: 400px;
-  padding-left: 760px;
-  padding-top: 45px;
+  padding-top: 100px;
   background-attachment: fixed;
-}
-#task
-{
-  width: 750px;
 }
 #footer{
   background-color: white;
