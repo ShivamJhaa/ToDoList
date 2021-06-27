@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ToDo List</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,16 +15,25 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.js"></script>
         <script defer src="script.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <style>
+                body {
+                  background-image: url('todo2.jpg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                }
+                </style>
 </head>
 <body>
         <div class="container">
-                <h1 class="neonText">
+                <h1 class="neonText" align="center">
                       ToDo List
                 </h1>
                 <div class="row">
                         <div class="col-md-8">
                                 <div class="mb-3">
-                                        <label for="newTask" class="form-label" id="neww">New Task</label>
+                                        <label for="newTask" class="form-label" id="neww"><h3>New Task</h3></label>
                                         <input type="text" class="form-control" id="inpNewTask" placeholder="Enter Task to Add">
                                 </div>
                                
@@ -48,9 +59,27 @@
                         </div>
                         
                 </div>
-                <ul class="list-group row m-2" id="ulTasks">                
-                </ul>
+                <div class="row">
+                        <div id="task" class="col-md-8" >
+                                <ul class="list-group row-m-2" id="ulTasks">                
+                                </ul>
+                        </div>
+                        <div  id="calendar" class="col">                
+                                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23795548&amp;ctz=Asia%2FKolkata&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTEwMzU1MDY3MDk0MzUwNTkzNTE4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTExMTM5OTE0MTYzOTk3OTExNjIxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTAxMDgwOTI5MDA3MzQwMDc0NDE5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTA0NzYxNDEyMzc1MjYwNzI2NjIwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2333B679&amp;color=%230047a8&amp;color=%230B8043&amp;color=%23202124&amp;color=%23174ea6&amp;color=%23174ea6&amp;showCalendars=1&amp;showPrint=0&amp;showNav=1" style="border:solid 1px #777" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                        
+
+                </div>
+                
+                
+                
             
+        </div>
+        <div  id="footer">
+                <div id="icon"><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/></i></div>
+                <div id="icon1"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"/></div>
+                <div id="icon2"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></div>
+                <div id="icon3"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"/></div>
         </div>
         
 </body>
